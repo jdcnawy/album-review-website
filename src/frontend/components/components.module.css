@@ -1,0 +1,159 @@
+.globalWrapper {
+  background-color: #1b1b1b;
+  border-radius: 5px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Use min-height to ensure the container fills the screen */
+}
+
+/* Add container styles to specific components if needed */
+.Dashboard,
+.CreatePostForm,
+.CreateUserForm,
+.LoginForm,
+.UserProfile {
+  width: 90%;
+  max-width: 1200px; /* Set a maximum width for the container */
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.secondaryHeader {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+
+.secondaryHeader {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+.Header {
+    background-color: #282c36;
+    padding: 1rem;
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+.HeaderNav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+.HeaderNav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+.HeaderNav a:hover {
+    background-color: #4a4e58;
+  }
+  
+  
+
+.LoginForm {
+    width: 90vw;
+    margin: auto;
+    margin-left: auto; /* Added to expand to the right */
+    margin-right: auto; /* Added to expand to the left */
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 80vh;
+    padding: 2rem;
+    background-color: #333333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+.LoginForm h2 {
+    text-align: center;
+  }
+  
+.LoginForm form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.LoginForm label {
+    margin-bottom: 8px;
+  }
+  
+.LoginForm input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+.LoginForm button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+.LoginForm button:hover {
+    background-color: #0056b3;
+  }
+
+
+.UserProfile {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+.UserProfile h2 {
+    text-align: center;
+  }
+
+.UserProfileContainer {
+    text-align: center;
+  }
+  
+.UserProfileContainer h1 {
+    color: #333;
+  }
+.PostCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333333;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+.albumCover {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+.reviewContent {
+    text-align: left;
+  }
