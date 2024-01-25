@@ -4,6 +4,7 @@ const axios = require('axios');
 const qs = require('qs');
 const fs = require('fs');
 const path = require('path');
+require('dotenv').config();
 
 const app = express();
 const port = 3001;
@@ -11,12 +12,11 @@ const port = 3001;
 app.use(cors());
 app.use(express.json());
 
-// Define getAccessToken function
 
 const getAccessToken = async () => {
   try {
-    const clientId = 'bf951b6a6d6e43c09cb0e317859a652c';
-    const clientSecret = '4577889fe42846cd9cab3d8f0c520a6e';
+    const clientId = process.env.SPOTIFY_CLIENT_ID;
+    const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
     const authString = `${clientId}:${clientSecret}`;
     const base64AuthString = Buffer.from(authString).toString('base64');
     const headers = {
