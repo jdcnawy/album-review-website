@@ -97,4 +97,3 @@ const AlbumSearch = ({ onSelectAlbum }) => {
 };
 
 export default AlbumSearch;
-
